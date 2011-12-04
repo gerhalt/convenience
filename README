@@ -1,1 +1,9 @@
-Dragging all my configuration files and helpful scripts into one place seems like a useful idea, so that's exactly what I'm doing.
+-----------------------------------------
+Convenience Scripts & Configuration Files
+-----------------------------------------
+
+Joshua Mottaz
+03/12/2011
+
+
+Currently, the focus is on basic server configuration.  I've taken and uploaded my rtorrent configuration, as well as the bash script used to ensure rtorrent is active and running in a tmux session that isn't currently attached to.
