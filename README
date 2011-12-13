@@ -3,7 +3,13 @@ Convenience Scripts & Configuration Files
 -----------------------------------------
 
 Joshua Mottaz
-03/12/2011
 
+12/12/2011
+----------
+Added a basic .vimrc file, using the wombat theme and setting up some handy defaults.  My plan is to take this base
+and modify it as needed.  It does assume a couple things, such as vim built with graphical support and CSApprox in
+order to use themes.  Other than that, it's basic.
 
+3/12/2011
+---------
 Currently, the focus is on basic server configuration.  I've taken and uploaded my rtorrent configuration, as well as the bash script used to ensure rtorrent is active and running in a tmux session that isn't currently attached to.
