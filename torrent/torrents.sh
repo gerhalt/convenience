@@ -7,7 +7,8 @@ directories=(~/torrents \
              ~/torrents/current \
              ~/torrents/finished \
              ~/torrents/snatch \
-             ~/torrents/seed)
+             ~/torrents/seed \
+             ~/torrents/session)
 
 for directory_name in ${directories[*]}
 do

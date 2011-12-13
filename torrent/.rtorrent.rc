@@ -6,6 +6,7 @@
 #           /finished    for completed torrents (seeded or not)
 #           /snatch      torrent files to be snatched go here
 #           /seed        torrent files to be seeded go here
+#           /session     rtorrent session info
 #
 #
 # LOTS OF USEFUL INFORMATION CAN BE FOUND AT 
