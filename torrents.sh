@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# Ensure the basic folder infrastructure exists
+# (necessary for my config file to function properly)
+
+directories=(~/torrents \
+             ~/torrents/current \
+             ~/torrents/finished \
+             ~/torrents/snatch \
+             ~/torrents/seed)
+
+for directory_name in ${directories[*]}
+do
+    if [ ! -d $directory_name ]; then
+        printf "%s doesn\'t exist, creating the directory...\n" $directory_name
+        mkdir -p $directory_name
+    fi
+done
+
 # Start a tmux server and a session named rtorrent, then
 # create a window within that session and launch rtorrent
 
