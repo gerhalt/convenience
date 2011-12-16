@@ -4,6 +4,10 @@ Convenience Scripts & Configuration Files
 
 Joshua Mottaz
 
+15/12/2011
+----------
+Added basic .bashrc and .tmux.conf files
+
 12/12/2011
 ----------
 Added a basic .vimrc file, using the wombat theme and setting up some handy defaults.  My plan is to take this base
