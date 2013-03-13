@@ -1,0 +1,15 @@
+# .gitignore
+
+# SVN
+.svn
+proposed-hss:*
+
+# Eclipse
+.pydevproject
+.project
+
+# Temporary Files
+*.swp
+
+# Misc
+*.pyc
