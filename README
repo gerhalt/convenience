@@ -4,6 +4,10 @@ Convenience Scripts & Configuration Files
 
 Joshua Mottaz
 
+13/03/2013
+----------
+Added a simple .gitignore file, placed in a new git subdirectory, and joined by the existing .gitconfig file.
+
 15/12/2011
 ----------
 Added basic .bashrc and .tmux.conf files
