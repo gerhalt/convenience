@@ -36,7 +36,7 @@ directory = ~/torrents/current
 session = ~/torrents/session
 
 # Move completed torrents
-system.method.set_key = event.download.finished,move_complete,"execute=mv,-u,$d.get_base_path=,~/torrents/finished/;d.set_directory=~/torrents/finished/"
+system.method.set_key = event.download.finished,move_complete,"d.set_directory=~/torrents/finished/;execute=mv,-u,$d.get_base_path=,~/torrents/finished/"
 
 # Two watched directories
 schedule = snatch,5,5,"load_start_verbose=~/torrents/snatch/*.torrent, view.set_visible=view_snatch"
