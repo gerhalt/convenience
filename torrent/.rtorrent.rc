@@ -36,11 +36,12 @@ directory = ~/torrents/current
 session = ~/torrents/session
 
 # Move completed torrents
-system.method.set_key = event.download.finished,move_complete,"d.set_directory=~/torrents/finished/;execute=mv,-u,$d.get_base_path=,~/torrents/finished/"
+system.method.set_key = event.download.finished,move_complete,"d.set_directory=$d.get_custom1= ;execute=mv,-u,$d.get_base_path=,$d.get_custom1="
 
 # Two watched directories
-schedule = snatch,5,5,"load_start_verbose=~/torrents/snatch/*.torrent, view.set_visible=view_snatch"
-schedule = seed,5,5,"load_start_verbose=~/torrents/seed/*.torrent, view.set_visible=view_seed"
+schedule = snatch,5,5,"load_start_verbose=~/torrents/snatch/*.torrent, view.set_visible=view_snatch, d.set_custom1=~/torrents/finished"
+schedule = seed,5,5,"load_start_verbose=~/torrents/seed/*.torrent, view.set_visible=view_seed, d.set_custom1=~/torrents/finished"
+schedule = private,5,5,"load_start_verbose=~/torrents/private/*.torrent, view.set_visible=view_seed, d.set_custom1=~/torrents/finished_private"
 schedule = untied_directory,5,5,stop_untied= 
 
 # Close torrents when diskspace is low.
